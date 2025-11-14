@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Топ 20 фильмов</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo-placeholder">
+                    <img src="images/logo.svg" alt="Logo" class="logo-desktop">
+                    <img src="images/logo2.svg" alt="Logo Mobile" class="logo-mobile">
+                </div>
+                <nav class="nav-links">
+                    <a href="#registerModal" class="register-link">Регистрация</a>
+                    <a href="#loginModal" class="login-link">Вход</a>
+                </nav>
+            </div>
+        </header>
+
+        <a href="#" class="modal-overlay" id="overlay"></a>
+
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close">x</a>
+                <div class="modal-header">
+                    <a href="#registerModal" class="tab">Регистрация</a>
+                    <a href="#loginModal" class="tab active">Авторизация</a>
+                </div>
+
+                <form class="form-login">
+                    <div class="input-grid">
+                        <div class="input-wrap">
+                            <input type="email" required placeholder=" ">
+                            <label>Email</label>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="password" required placeholder=" ">
+                            <label>Пароль</label>
+                        </div>
+                    </div>
+
+                    <button class="btn">Войти</button>
+                    <p class="hint">Все поля обязательны для заполнения</p>
+                </form>
+            </div>
+        </div>
+
+        <div id="registerModal" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close">x</a>
+                <div class="modal-header">
+                    <a href="#registerModal" class="tab active">Регистрация</a>
+                    <a href="#loginModal" class="tab">Авторизация</a>
+                </div>
+
+                <form class="form-register">
+                    <div class="input-wrap">
+                        <input type="text" required placeholder=" ">
+                        <label>Ваше имя</label>
+                    </div>
+
+                    <div class="input-grid">
+                        <div class="input-wrap">
+                            <input type="email" required placeholder=" ">
+                            <label>Email</label>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="tel" required placeholder=" ">
+                            <label>Мобильный телефон</label>
+                        </div>
+                    </div>
+
+                    <div class="input-grid">
+                        <div class="input-wrap">
+                            <input type="password" required placeholder=" ">
+                            <label>Пароль</label>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="password" required placeholder=" ">
+                            <label>Повторите пароль</label>
+                        </div>
+                    </div>
+
+                    <label class="checkbox">
+                        <input type="checkbox" required>
+                        <span>Согласен на обработку <span class="orange">персональных данных</span></span>
+                    </label>
+
+                    <button class="btn">Зарегистрироваться</button>
+                    <p class="hint">Все поля обязательны для заполнения</p>
+                </form>
+            </div>
+        </div>
+
+        <div class="divider"><img src="images/Rectangle.svg" alt=""></div>
+
+        <div class="title-row">
+            <h1 class="section-title">Топ 20 фильмов</h1>
+            <a href="#loginModal" class="custom-button-link">
+                <img src="images/Button.svg" alt="Добавить обзор" class="button-desktop">
+                <img src="images/Button2.svg" alt="Добавить обзор" class="button-mobile">
+            </a>
+        </div>
+
+        <div class="cards-container">
+            <div class="card"><img src="images/Card1.svg" alt=""></div>
+            <div class="card"><img src="images/Card2.svg" alt=""></div>
+            <div class="card"><img src="images/Card3.svg" alt=""></div>
+            <div class="card"><img src="images/Card4.svg" alt=""></div>
+            <div class="card"><img src="images/Card5.svg" alt=""></div>
+            <div class="card"><img src="images/Card6.svg" alt=""></div>
+            <div class="card"><img src="images/Card7.svg" alt=""></div>
+            <div class="card"><img src="images/Card8.svg" alt=""></div>
+            <div class="card"><img src="images/Card9.svg" alt=""></div>
+            <div class="card"><img src="images/Card10.svg" alt=""></div>
+        </div>
+
+        <div class="sm">
+            <picture class="sm-picture">
+                <!-- Сначала самые узкие экраны — браузер читает сверху вниз! -->
+                <source media="(max-width: 410px)" srcset="images/Showmore3.svg">
+                <source media="(max-width: 800px)" srcset="images/Showmore2.svg">
+                <!-- По умолчанию (шире 800px) — большая картинка -->
+                <img src="images/Showmore.svg" alt="Показать ещё">
+            </picture>
+        </div>
+
+        <div class="divider-footer"><img src="images/Rectangle.svg" alt=""></div>
+
+        <footer class="footer">
+            <div class="footer-email">info@gmail.com</div>
+            <div class="footer-info">Информация о разработчике</div>
+        </footer>
+    </div>
+</body>
+
+</html>
